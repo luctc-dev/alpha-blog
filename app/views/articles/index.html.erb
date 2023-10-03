@@ -1,1 +1,5 @@
 <h1>Articles listing page</h1>
+
+<% @articles.each do |article| %>
+  <p><strong>Json <%= article.id %>: </strong><%= article.to_json %></p>
+<% end %>
